@@ -1,0 +1,92 @@
+/* Reset */
+:root {
+  --cor: #b80000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .header {
+    background-color: var(--cor);
+    padding: 10px 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .header .menu li {
+    margin-right: 15px;
+  }
+  
+  .header .menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .news-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .news-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .news-info {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .news-content {
+    margin-bottom: 15px;
+  }
+  
+  .highlight {
+    color: var(--cor);
+    font-weight: bold;
+  }
+  
+  .footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  .news-container ul {
+    margin: 0; /* Remove margens externas */
+    padding-left: 20px; /* Adiciona espaçamento à esquerda para as listas */
+    list-style-position: inside; /* Faz com que os pontos da lista fiquem dentro do contêiner */
+  }
+  
+  /* Garante que os itens da lista estejam alinhados */
+  .news-container li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+  }
+  
