@@ -29,3 +29,7 @@ window.onscroll = function() {
 
   prevScrollPos = currentScrollPos;  // Atualiza a posição anterior
 };
+function toggleMenu() {
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("active");
+}

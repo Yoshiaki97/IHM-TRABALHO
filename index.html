@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notícia - Design de Sistemas Interativos</title>
   <link rel="stylesheet" href="estilo.css">
+  <style>
+    @media (max-width: 768px) {
+      .footer-news {
+        flex-direction: column; /* Empilha os itens no celular */
+        align-items: center;
+      }
+
+      .footer-item {
+        flex-direction: column; /* Imagem em cima, texto embaixo */
+        text-align: center;
+      }
+
+      .footer-image {
+        width: 100%;
+        height: auto; /* Ajusta imagem proporcionalmente */
+      }
+
+      .footer-text h4 {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -25,6 +47,11 @@
   <header class="header-fixed">
     <div class="header-container">
       <div class="logo">JN</div>
+      <button class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav>
         <ul class="menu">
           <li><a href="#">INICIO</a></li>
