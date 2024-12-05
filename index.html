@@ -9,15 +9,29 @@
 <body>
   <header class="header">
     <div class="header-container">
-      <div class="logo">g1</div>
+      <div class="logo">JN</div>
       <nav>
         <ul class="menu">
-          <li><a href="#">g1</a></li>
-          <li><a href="#">ge</a></li>
-          <li><a href="#">gshow</a></li>
-          <li><a href="#">globoplay</a></li>
-          <li><a href="#">jogos</a></li>
-          <li><a href="#">o globo</a></li>
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">NOTICIAS</a></li>
+          <form id="search-form" action="/search" method="get">
+            <input type="text" name="q" placeholder="BUSCAR" class="search-field" id="search-input" onfocus="mudaCorFocus(this)" onblur="mudaCorBlur(this)">
+          </form>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <header class="header-fixed">
+    <div class="header-container">
+      <div class="logo">JN</div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">NOTICIAS</a></li>
+          <form id="search-form-fixed" action="/search" method="get">
+            <input type="text" name="q" placeholder="BUSCAR" class="search-field" id="search-input" onfocus="mudaCorFocus(this)" onblur="mudaCorBlur(this)">
+          </form>
         </ul>
       </nav>
     </div>
@@ -95,8 +109,25 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2024 Todos os direitos reservados. g1 Notícias.</p>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-item">
+          <img src="img/img-noticia.jpg" alt="Imagem notícia" class="footer-image">
+          <div class="footer-text">
+            <h4>Homem que ganhou R$ 201 milhões na Mega-Sena morre 24 dias depois</h4>
+            <p>Veja o que se sabe sobre a causa da morte</p>
+          </div>
+      </div>
+      <div class="footer-item">
+        <img src="img/img-noticia.jpg" alt="Imagem notícia" class="footer-image">
+        <div class="footer-text">
+          <h4>Homem que ganhou R$ 201 milhões na Mega-Sena morre 24 dias depois</h4>
+          <p>Veja o que se sabe sobre a causa da morte</p>
+        </div>
+    </div>
+          
+    </div>
   </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
