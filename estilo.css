@@ -175,7 +175,7 @@ body {
 #search-input.focused::placeholder {
   color: black;
 }
-footer {
+.outro {
   margin: 0 auto; 
   background-color: #f4f4f4;
   padding: 20px 40px;
@@ -183,18 +183,19 @@ footer {
   font-family: Arial, sans-serif;
   color: #333;
 }
-.footer-container{
+.outro-container{
   max-width: 700px;
   margin: 0 auto;
+  padding: 20px;
 }
 
-.footer-news {
+.outro-news {
   display: flex;
   flex-direction: column;
   flex: 1 1 60%;
 }
 
-.footer-item {
+.outro-item {
   border-top: 1px solid rgb(211, 211, 211);
   margin-bottom: 40px;
   padding-top: 40px;
@@ -203,20 +204,91 @@ footer {
   gap: 15px;      
 }
 
-.footer-image {
+.outro-image {
   width: 200px;
   height: 150px;
   object-fit: cover;
   margin-right: 10px;
   border-radius: 4px;
 }
-.footer-text h4 {
+.outro-text h4 {
   font-size: 24px; 
   color: var(--cor);
   margin: 0;
 }
-.footer-text p {
+.outro-text p {
   font-size: 14px; 
   color: #666;
   margin: 0;
+}
+.footer {
+  background-color: var(--cor); /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info, .footer-links, .footer-socials {
+  flex: 1 1 30%; /* Divide as seções em 3 colunas */
+  margin: 10px;
+}
+
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #f4f4f4; /* Destaque */
+}
+
+.footer p, .footer ul, .footer a {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #bbb;
 }

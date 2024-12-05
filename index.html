@@ -25,6 +25,14 @@
       .footer-text h4 {
         font-size: 16px;
       }
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-info, .footer-links, .footer-socials {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
@@ -134,26 +142,55 @@
       </div>
 
     </section>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-item">
-          <img src="img/img-noticia.jpg" alt="Imagem notícia" class="footer-image">
-          <div class="footer-text">
+    <section class="outro">
+      <div class="outro-container">
+        <div class="outro-item">
+            <img src="img/img-noticia.jpg" alt="Imagem notícia" class="outro-image">
+            <div class="outro-text">
+              <h4>Homem que ganhou R$ 201 milhões na Mega-Sena morre 24 dias depois</h4>
+              <p>Veja o que se sabe sobre a causa da morte</p>
+            </div>
+        </div>
+        <div class="outro-item">
+          <img src="img/img-noticia.jpg" alt="Imagem notícia" class="outro-image">
+          <div class="outro-text">
             <h4>Homem que ganhou R$ 201 milhões na Mega-Sena morre 24 dias depois</h4>
             <p>Veja o que se sabe sobre a causa da morte</p>
           </div>
       </div>
-      <div class="footer-item">
-        <img src="img/img-noticia.jpg" alt="Imagem notícia" class="footer-image">
-        <div class="footer-text">
-          <h4>Homem que ganhou R$ 201 milhões na Mega-Sena morre 24 dias depois</h4>
-          <p>Veja o que se sabe sobre a causa da morte</p>
-        </div>
-    </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Informações Gerais -->
+      <div class="footer-info">
+        <h4>Sobre Nós</h4>
+        <p>Somos uma empresa dedicada a oferecer as melhores notícias e atualizações. Conecte-se conosco para saber mais!</p>
+      </div>
+  
+      <!-- Links Rápidos -->
+      <div class="footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Notícias</a></li>
+        </ul>
+      </div>
+  
+      <!-- Redes Sociais -->
+      <div class="footer-socials">
+        <h4>Siga-nos</h4>
+        <div class="social-icons">
+          <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+          <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="img/whatsapp.png" alt="Whatsapp"></a>
           
+        </div>
+      </div>
     </div>
+    <p class="footer-copy">&copy; 2024 JN Notícias. Todos os direitos reservados.</p>
   </footer>
   <script src="scripts.js"></script>
 </body>
