@@ -9,7 +9,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -47,8 +47,8 @@
   }
   
   .news-container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 20px auto;
     padding: 20px;
   }
   
@@ -61,10 +61,12 @@
     font-size: 14px;
     color: #555;
     margin-bottom: 20px;
+    
   }
   
   .news-content {
     margin-bottom: 15px;
+    margin-top: 40px;
   }
   
   .highlight {
@@ -80,13 +82,16 @@
     margin-top: 20px;
   }
   .news-container ul {
-    margin: 0; /* Remove margens externas */
-    padding-left: 20px; /* Adiciona espaçamento à esquerda para as listas */
-    list-style-position: inside; /* Faz com que os pontos da lista fiquem dentro do contêiner */
+    margin: 0;
+    padding-left: 20px;
+    list-style-position: inside; 
   }
   
-  /* Garante que os itens da lista estejam alinhados */
   .news-container li {
-    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+    margin-bottom: 10px;
+  }
+  .news-image {
+    max-width: 100%; 
+    height: auto; 
   }
   
