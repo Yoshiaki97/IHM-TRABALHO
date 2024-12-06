@@ -12,22 +12,21 @@ function mudaCorBlur(obj){
     obj.classList.remove('focused');
 }
 
-let prevScrollPos = window.pageYOffset;  // Posição do scroll anterior
+let prevScrollPos = window.pageYOffset;
 
 window.onscroll = function() {
   var header = document.querySelector(".header");
   var headerFixed = document.querySelector(".header-fixed");
-  var currentScrollPos = window.pageYOffset;  // Posição do scroll atual
+  var currentScrollPos = window.pageYOffset;
 
-  // Quando o scroll está para baixo, esconde o header original e mostra o novo header
+
   if (prevScrollPos < currentScrollPos) {
-    headerFixed.style.transform = "translateY(0)";  // Mostra o novo header fixo
+    headerFixed.style.transform = "translateY(0)";
   } else if (currentScrollPos === 0) {
-    // Quando a página está no topo, esconde o header fixo
-    headerFixed.style.transform = "translateY(-100%)";  // Esconde o header fixo
+    headerFixed.style.transform = "translateY(-100%)";
   }
 
-  prevScrollPos = currentScrollPos;  // Atualiza a posição anterior
+  prevScrollPos = currentScrollPos;
 };
 function toggleMenu() {
   const menu = document.querySelector(".menu");

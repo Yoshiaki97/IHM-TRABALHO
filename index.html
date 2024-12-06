@@ -7,22 +7,22 @@
   <link rel="stylesheet" href="estilo.css">
   <style>
     @media (max-width: 768px) {
-      .footer-news {
-        flex-direction: column; /* Empilha os itens no celular */
+      .outro-news {
+        flex-direction: column;
         align-items: center;
       }
 
-      .footer-item {
-        flex-direction: column; /* Imagem em cima, texto embaixo */
+      .outro-item {
+        flex-direction: column;
         text-align: center;
       }
 
-      .footer-image {
+      .outro-image {
         width: 100%;
-        height: auto; /* Ajusta imagem proporcionalmente */
+        height: auto;
       }
 
-      .footer-text h4 {
+      .outro-text h4 {
         font-size: 16px;
       }
       .footer-container {
@@ -42,8 +42,8 @@
       <div class="logo">JN</div>
       <nav>
         <ul class="menu">
-          <li><a href="#">INICIO</a></li>
-          <li><a href="#">NOTICIAS</a></li>
+          <li><a href="#">INÍCIO</a></li>
+          <li><a href="#">NOTÍCIAS</a></li>
         </ul>
       </nav>
       <form id="search-form" action="/search" method="get">
@@ -62,8 +62,8 @@
       </button>
       <nav>
         <ul class="menu">
-          <li><a href="#">INICIO</a></li>
-          <li><a href="#">NOTICIAS</a></li>
+          <li><a href="#">INÍCIO</a></li>
+          <li><a href="#">NOTÍCIAS</a></li>
         </ul>
       </nav>
       <form id="search-form-fixed" action="/search" method="get">
@@ -143,19 +143,21 @@
 
     </section>
     <section class="outro">
+      <h2 class="outro-titulo">VEJA MAIS</h2>
       <div class="outro-container">
         <div class="outro-item">
-            <img src="img/img-noticia.jpg" alt="Imagem notícia" class="outro-image">
+          <a href=""><img src="img/img-outro1.jpg" alt="Imagem notícia" class="outro-image"></a>
             <div class="outro-text">
-              <h4>Homem que ganhou R$ 201 milhões na Mega-Sena morre 24 dias depois</h4>
-              <p>Veja o que se sabe sobre a causa da morte</p>
+              <h4><a href="">Emoção e computação afetiva</a></h4>
+              <p>Entenda como as emoções influenciam a interação humano-computador.</p>
             </div>
         </div>
         <div class="outro-item">
-          <img src="img/img-noticia.jpg" alt="Imagem notícia" class="outro-image">
-          <div class="outro-text">
-            <h4>Homem que ganhou R$ 201 milhões na Mega-Sena morre 24 dias depois</h4>
-            <p>Veja o que se sabe sobre a causa da morte</p>
+          <a href=""><img src="img/img-outro2.jpg" alt="Imagem notícia" class="outro-image"></a>
+          
+          <div class="outro-text" >
+            <h4><a href="">Design de interface: aspectos visuais</a></h4>
+            <p>Descubra os fundamentos de um design atrativo e funcional.</p>
           </div>
       </div>
       </div>
@@ -164,13 +166,12 @@
 
   <footer class="footer">
     <div class="footer-container">
-      <!-- Informações Gerais -->
+
       <div class="footer-info">
         <h4>Sobre Nós</h4>
         <p>Somos uma empresa dedicada a oferecer as melhores notícias e atualizações. Conecte-se conosco para saber mais!</p>
       </div>
   
-      <!-- Links Rápidos -->
       <div class="footer-links">
         <h4>Links Rápidos</h4>
         <ul>
@@ -179,7 +180,6 @@
         </ul>
       </div>
   
-      <!-- Redes Sociais -->
       <div class="footer-socials">
         <h4>Siga-nos</h4>
         <div class="social-icons">
